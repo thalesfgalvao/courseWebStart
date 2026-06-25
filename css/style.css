@@ -1,0 +1,55 @@
+@import url("./globalStyle.css");
+
+:root {
+  --colorPrimary: #0058be;
+  --colorSecondary: #545f73;
+  --colorTertiary: #8127cf;
+  --colorSuccess: #22c55e;
+  --colorDanger: #ef4444;
+  --colorBackground: #f8fafc;
+  --colorText: #1e293b;
+
+  --sizeSmall: 1rem;
+  --sizeNormal: 1.6rem;
+  --sizeHuge: 2.2rem;
+
+  --weightTiny: 200;
+  --weightNormal: 400;
+  --weightBold: 700;
+}
+
+body {
+  background-color: var(--colorBackground);
+}
+
+p {
+  color: var(--colorText);
+  font-size: var(--sizeNormal);
+  font-weight: var(--weightNormal);
+}
+
+header {
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid red;
+}
+
+.logoWebStart {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.logoWebStartContent {
+  font-size: 5rem;
+  color: var(--colorPrimary);
+  font-weight: var(--weightBold);
+  transition: 0.5s;
+}
+
+.logoWebStartContent:hover {
+  transition: 0.5s;
+  filter: brightness(0.8);
+  cursor: pointer;
+}
